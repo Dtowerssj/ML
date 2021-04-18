@@ -1,10 +1,12 @@
+
+
 const data = {
     productos: [
         {
         _id: '1',
         nombre: 'Carrito de supermercado',
         imagen: 'imagenes/producto-1.jpg',
-        precio: 10,
+        precio: 45,
         descripcion: 'Carrito de supermercado azul'
         },
         {

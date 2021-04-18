@@ -55,6 +55,36 @@ a {
 a:hover {
   color: #ff8000;
 }
+ul{
+  margin: 0;
+  padding: 0;
+  margin-left: 2rem;
+  list-style-type: none;
+}
+li{
+  margin-top: 1rem;
+}
+button{
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #a4a4a4 solid;
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+button.primary{
+  background-color: #2170be;
+  color: #f8f8f8;
+}
+button:hover{
+  border: 0.1rem #1f1f1f solid;
+}
+button.block{
+  width: 100%;
+}
 
 
 /* Header */
@@ -76,6 +106,22 @@ a.brand {
 .row.center {
   justify-content: center;
 }
+.row.top{
+  align-items: flex-start;
+}
+.col-1{
+  flex: 1 1 25rem;
+}
+.col-2{
+  flex: 2 1 50rem;
+}
+
+/*titulo*/
+.titulo {
+  color: #1f1f1f;
+  text-align: center;
+  font-size: 3.45rem;
+}
 
 /*Imagen*/
 img{
@@ -84,6 +130,9 @@ img{
 img.medium{
   max-width: 29rem;
   width: 100%;    
+}
+img.large{
+  width: 100%;
 }
 
 /*Card*/
@@ -99,9 +148,34 @@ img.medium{
 .card-body > * {
   margin-bottom: 0.5rem;
 }
+.card-bodyy{
+  padding: 1rem;
+}
+.card-bodyy > * {
+  margin-bottom: 0.5rem;
+}
+.card:hover{
+  border: 0.05rem #1f1f1f96 solid;
+}
+.card-bodyy:hover{
+  border: 0.1rem #c0c0c0 solid;
+}
 .price{
   padding: 1rem;
   padding-top: 0;
   font-size: 3.2rem;
   margin-top: 0;
+}
+.alert{
+  padding: 1rem;
+  border: 0.1rem solid transparent;
+  border: 0.5rem;
+}
+.alert-info{
+  color: #2020a0;
+  background-color: #e0e0ff;
+}
+.alert-danger{
+  color: #a02020;
+  background-color: #ffe0e0e0;
 }
