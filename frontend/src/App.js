@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
+import RegisterScreen from './screens/RegisterScreen';
+import SigninScreen from './screens/SigninScreen';
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
 
       <main>
         <Route path="/producto/:id" component={ProductScreen}></Route>
+        <Route path="/signin" component={SigninScreen}></Route>
+        <Route path="/register" component={RegisterScreen}></Route>
         <Route path="/" component={HomeScreen} exact></Route>
        
       </main>
